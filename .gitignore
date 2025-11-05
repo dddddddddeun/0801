@@ -1,0 +1,19 @@
+# Godot 자동 생성 파일
+.import/
+.godot/
+.mono/
+export/
+
+# OS 관련
+.vs/
+.DS_Store
+Thumbs.db
+
+# 기타 큰 리소스/길이 문제 방지
+__MACOSX/
+*.url
+*.tmx
+*.txt
+*.png
+판타지_UI팩_O__Fantasy Minimal Pixel Art GUI by eta-commercial-free/
+캐릭터_성_타일_팩O__Tiny Pixel Fantasy - Base Pack (1)/
