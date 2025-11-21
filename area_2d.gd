@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var target_scene_path: String = "res://mansion_interior.tscn"
+@export var target_scene_path: String = "res://day1/day1_mansion_inside.tscn"
 var player_in_area := false
 
 func _ready():

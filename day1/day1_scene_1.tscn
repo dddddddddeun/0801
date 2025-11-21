@@ -1,40 +1,43 @@
-[gd_scene load_steps=50 format=4 uid="uid://euyb817lhkj"]
+[gd_scene load_steps=52 format=4 uid="uid://euyb817lhkj"]
 
-[ext_resource type="Texture2D" uid="uid://17u6rk34mfw3" path="res://craftpix-net-654184/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="1_1abo5"]
-[ext_resource type="Texture2D" uid="uid://b1vkm55b4ji1u" path="res://kenney_tiny-town/Tilemap/tilemap_packed.png" id="2_knagl"]
-[ext_resource type="Texture2D" uid="uid://c5pqpkoes3fpb" path="res://kenney_tiny-town/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="3_kl852"]
-[ext_resource type="Script" uid="uid://dgv2168flboc5" path="res://character_body_2d.gd" id="4_v777v"]
-[ext_resource type="Texture2D" uid="uid://co344kfgmc5j" path="res://main_up.png" id="5_h3xb4"]
-[ext_resource type="Texture2D" uid="uid://8tdpn3aceli6" path="res://m_up_frame1.png" id="6_1nkp2"]
-[ext_resource type="Texture2D" uid="uid://eyuf7s8vblf4" path="res://m_up_frame2.png" id="7_gk6se"]
-[ext_resource type="Texture2D" uid="uid://duqqbcltoxh1o" path="res://pixil-frame-0.png" id="8_2lqri"]
-[ext_resource type="Texture2D" uid="uid://b7bm8gbcroe5s" path="res://m_down_frame1.png" id="9_572ix"]
-[ext_resource type="Texture2D" uid="uid://cg6jpubypcwoy" path="res://main_down_frame2.png" id="10_vhlgy"]
-[ext_resource type="Texture2D" uid="uid://b3o613leauumq" path="res://main_left.png" id="11_a2qhw"]
-[ext_resource type="Texture2D" uid="uid://b76aeuwpf2xfi" path="res://m_left_frame1.png" id="12_8u7hb"]
-[ext_resource type="Texture2D" uid="uid://opmr44htty6l" path="res://m_left_frame2.png" id="13_o67h7"]
-[ext_resource type="Texture2D" uid="uid://bl7i4x13it457" path="res://main_right.png" id="14_bwklr"]
-[ext_resource type="Texture2D" uid="uid://caab2pjy85mpo" path="res://m_right_frame1.png" id="15_dpcyg"]
-[ext_resource type="Texture2D" uid="uid://d25tutyrbmf1a" path="res://m_right_frame2.png" id="16_lt344"]
-[ext_resource type="Texture2D" uid="uid://cs80eabgbme4w" path="res://m_upleft.png" id="17_ih1w3"]
-[ext_resource type="Texture2D" uid="uid://g0hub4qh6kcp" path="res://m_upleft_frame1.png" id="18_4nrhx"]
-[ext_resource type="Texture2D" uid="uid://dp7felrffhcxg" path="res://m_upleft_frame2.png" id="19_yv7oe"]
-[ext_resource type="Texture2D" uid="uid://cmvm0v2d2lnjf" path="res://m_upright.png" id="20_uds4v"]
-[ext_resource type="Texture2D" uid="uid://wfa28lpmiirx" path="res://m_upright_frame1.png" id="21_bkkji"]
-[ext_resource type="Texture2D" uid="uid://brhpgruaj8fne" path="res://m_upright_frame2.png" id="22_12pqm"]
-[ext_resource type="Texture2D" uid="uid://3jc4mnpqt74n" path="res://main_leftdown.png" id="23_hr68e"]
-[ext_resource type="Texture2D" uid="uid://b684y4a8aq7xv" path="res://m_downleft_frame1.png" id="24_gf0rs"]
-[ext_resource type="Texture2D" uid="uid://omxgvq45sech" path="res://m_downleft_frame2.png" id="25_fntfs"]
-[ext_resource type="Texture2D" uid="uid://dn3n1h68s06o2" path="res://main_rightdown.png" id="26_2vijh"]
-[ext_resource type="Texture2D" uid="uid://d17sjgr41w2r2" path="res://m_downright_frame1.png" id="27_275un"]
-[ext_resource type="Texture2D" uid="uid://dmlw3lniavgpu" path="res://m_down_right_frame2.png" id="28_sln7p"]
-[ext_resource type="Script" uid="uid://4xi12xrf2bsx" path="res://area_2d_2.gd" id="29_h3xb4"]
-[ext_resource type="Texture2D" uid="uid://75la2jh7l124" path="res://policefront.png" id="30_1nkp2"]
-[ext_resource type="Script" uid="uid://c6mif5k8ehx2w" path="res://police.gd" id="30_2lqri"]
-[ext_resource type="Script" uid="uid://b2vyau4hxigd2" path="res://area_2d_2_1.gd" id="31_gk6se"]
+[ext_resource type="Script" uid="uid://cjjanse4lglk7" path="res://quest_ui.gd" id="1_elocp"]
+[ext_resource type="Texture2D" uid="uid://b1vkm55b4ji1u" path="res://kenney_tiny-town/Tilemap/tilemap_packed.png" id="2_l6w8r"]
+[ext_resource type="Texture2D" uid="uid://17u6rk34mfw3" path="res://craftpix-net-654184/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="3_yj1n4"]
+[ext_resource type="Texture2D" uid="uid://c5pqpkoes3fpb" path="res://kenney_tiny-town/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="4_i3san"]
+[ext_resource type="Script" uid="uid://dgv2168flboc5" path="res://character_body_2d.gd" id="5_oos8c"]
+[ext_resource type="Texture2D" uid="uid://co344kfgmc5j" path="res://main_up.png" id="6_4ogoj"]
+[ext_resource type="Texture2D" uid="uid://8tdpn3aceli6" path="res://m_up_frame1.png" id="7_yb2pp"]
+[ext_resource type="Texture2D" uid="uid://eyuf7s8vblf4" path="res://m_up_frame2.png" id="8_we0o8"]
+[ext_resource type="Texture2D" uid="uid://duqqbcltoxh1o" path="res://pixil-frame-0.png" id="9_fa8du"]
+[ext_resource type="Texture2D" uid="uid://b7bm8gbcroe5s" path="res://m_down_frame1.png" id="10_dvsb6"]
+[ext_resource type="Texture2D" uid="uid://cg6jpubypcwoy" path="res://main_down_frame2.png" id="11_jsds7"]
+[ext_resource type="Texture2D" uid="uid://b3o613leauumq" path="res://main_left.png" id="12_2r6db"]
+[ext_resource type="Texture2D" uid="uid://b76aeuwpf2xfi" path="res://m_left_frame1.png" id="13_jg52l"]
+[ext_resource type="Texture2D" uid="uid://opmr44htty6l" path="res://m_left_frame2.png" id="14_xjpch"]
+[ext_resource type="Texture2D" uid="uid://bl7i4x13it457" path="res://main_right.png" id="15_l2gs8"]
+[ext_resource type="Texture2D" uid="uid://caab2pjy85mpo" path="res://m_right_frame1.png" id="16_qfe65"]
+[ext_resource type="Texture2D" uid="uid://d25tutyrbmf1a" path="res://m_right_frame2.png" id="17_khh22"]
+[ext_resource type="Texture2D" uid="uid://cs80eabgbme4w" path="res://m_upleft.png" id="18_xhcmu"]
+[ext_resource type="Texture2D" uid="uid://g0hub4qh6kcp" path="res://m_upleft_frame1.png" id="19_7pe0w"]
+[ext_resource type="Texture2D" uid="uid://dp7felrffhcxg" path="res://m_upleft_frame2.png" id="20_3jfv0"]
+[ext_resource type="Texture2D" uid="uid://cmvm0v2d2lnjf" path="res://m_upright.png" id="21_gicgi"]
+[ext_resource type="Texture2D" uid="uid://wfa28lpmiirx" path="res://m_upright_frame1.png" id="22_xws8i"]
+[ext_resource type="Texture2D" uid="uid://brhpgruaj8fne" path="res://m_upright_frame2.png" id="23_pgcem"]
+[ext_resource type="Texture2D" uid="uid://3jc4mnpqt74n" path="res://main_leftdown.png" id="24_4qfo6"]
+[ext_resource type="Texture2D" uid="uid://b684y4a8aq7xv" path="res://m_downleft_frame1.png" id="25_j0v0w"]
+[ext_resource type="Texture2D" uid="uid://omxgvq45sech" path="res://m_downleft_frame2.png" id="26_4a6jm"]
+[ext_resource type="Texture2D" uid="uid://dn3n1h68s06o2" path="res://main_rightdown.png" id="27_8i8ok"]
+[ext_resource type="Texture2D" uid="uid://d17sjgr41w2r2" path="res://m_downright_frame1.png" id="28_5tdlr"]
+[ext_resource type="Texture2D" uid="uid://dmlw3lniavgpu" path="res://m_down_right_frame2.png" id="29_27n6m"]
+[ext_resource type="Script" uid="uid://4xi12xrf2bsx" path="res://area_2d_2.gd" id="30_37sr3"]
+[ext_resource type="Script" uid="uid://c6mif5k8ehx2w" path="res://police.gd" id="31_ijx7x"]
+[ext_resource type="Texture2D" uid="uid://75la2jh7l124" path="res://policefront.png" id="32_si72m"]
+[ext_resource type="Script" uid="uid://b2vyau4hxigd2" path="res://area_2d_2_1.gd" id="33_ajiu8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_a2qhw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nd1y5"]
-texture = ExtResource("2_knagl")
+texture = ExtResource("2_l6w8r")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -174,7 +177,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_nd1y5")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4nmru"]
-texture = ExtResource("1_1abo5")
+texture = ExtResource("3_yj1n4")
 texture_region_size = Vector2i(17, 17)
 0:0/0 = 0
 1:0/0 = 0
@@ -2089,7 +2092,7 @@ texture_region_size = Vector2i(17, 17)
 59:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_05u5g"]
-texture = ExtResource("2_knagl")
+texture = ExtResource("2_l6w8r")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2285,7 +2288,7 @@ sources/0 = SubResource("TileSetAtlasSource_4nmru")
 sources/1 = SubResource("TileSetAtlasSource_05u5g")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mjd5i"]
-texture = ExtResource("2_knagl")
+texture = ExtResource("2_l6w8r")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2420,7 +2423,7 @@ texture = ExtResource("2_knagl")
 11:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0rxu"]
-texture = ExtResource("3_kl852")
+texture = ExtResource("4_i3san")
 texture_region_size = Vector2i(17, 17)
 0:0/0 = 0
 1:0/0 = 0
@@ -4339,7 +4342,7 @@ sources/0 = SubResource("TileSetAtlasSource_mjd5i")
 sources/1 = SubResource("TileSetAtlasSource_t0rxu")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hsn4b"]
-size = Vector2(40, 59)
+size = Vector2(40, 54)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1nkp2"]
 size = Vector2(193, 336)
@@ -4350,7 +4353,7 @@ size = Vector2(193, 336)
 size = Vector2(43, 65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_572ix"]
-size = Vector2(132, 150)
+size = Vector2(204.5, 203)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2lqri"]
 size = Vector2(190, 114)
@@ -4362,6 +4365,38 @@ size = Vector2(190, 114)
 [sub_resource type="LabelSettings" id="LabelSettings_vhlgy"]
 
 [node name="scene_1" type="Node2D"]
+
+[node name="QuestUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_elocp")
+
+[node name="Panel" type="Panel" parent="QuestUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -165.0
+offset_right = 350.0
+offset_bottom = 235.0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="QuestUI/Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "퀘스트 목록"
+label_settings = SubResource("LabelSettings_a2qhw")
+
+[node name="QuestList" type="VBoxContainer" parent="QuestUI/Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="QuestUI/Panel/QuestList"]
+layout_mode = 2
 
 [node name="방지턱" type="TileMapLayer" parent="."]
 scale = Vector2(3, 3)
@@ -4380,24 +4415,24 @@ tile_set = SubResource("TileSet_2fno3")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(295, 813)
-script = ExtResource("4_v777v")
-sprite_up_frames = Array[Texture]([ExtResource("5_h3xb4"), ExtResource("6_1nkp2"), ExtResource("7_gk6se")])
-sprite_down_frames = Array[Texture]([ExtResource("8_2lqri"), ExtResource("9_572ix"), ExtResource("10_vhlgy")])
-sprite_left_frames = Array[Texture]([ExtResource("11_a2qhw"), ExtResource("12_8u7hb"), ExtResource("13_o67h7")])
-sprite_right_frames = Array[Texture]([ExtResource("14_bwklr"), ExtResource("15_dpcyg"), ExtResource("16_lt344")])
-sprite_up_left_frames = Array[Texture]([ExtResource("17_ih1w3"), ExtResource("18_4nrhx"), ExtResource("19_yv7oe")])
-sprite_up_right_frames = Array[Texture]([ExtResource("20_uds4v"), ExtResource("21_bkkji"), ExtResource("22_12pqm")])
-sprite_down_left_frames = Array[Texture]([ExtResource("23_hr68e"), ExtResource("24_gf0rs"), ExtResource("25_fntfs")])
-sprite_down_right_frames = Array[Texture]([ExtResource("26_2vijh"), ExtResource("27_275un"), ExtResource("28_sln7p")])
+script = ExtResource("5_oos8c")
+sprite_up_frames = Array[Texture]([ExtResource("6_4ogoj"), ExtResource("7_yb2pp"), ExtResource("8_we0o8")])
+sprite_down_frames = Array[Texture]([ExtResource("9_fa8du"), ExtResource("10_dvsb6"), ExtResource("11_jsds7")])
+sprite_left_frames = Array[Texture]([ExtResource("12_2r6db"), ExtResource("13_jg52l"), ExtResource("14_xjpch")])
+sprite_right_frames = Array[Texture]([ExtResource("15_l2gs8"), ExtResource("16_qfe65"), ExtResource("17_khh22")])
+sprite_up_left_frames = Array[Texture]([ExtResource("18_xhcmu"), ExtResource("19_7pe0w"), ExtResource("20_3jfv0")])
+sprite_up_right_frames = Array[Texture]([ExtResource("21_gicgi"), ExtResource("22_xws8i"), ExtResource("23_pgcem")])
+sprite_down_left_frames = Array[Texture]([ExtResource("24_4qfo6"), ExtResource("25_j0v0w"), ExtResource("26_4a6jm")])
+sprite_down_right_frames = Array[Texture]([ExtResource("27_8i8ok"), ExtResource("28_5tdlr"), ExtResource("29_27n6m")])
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(36, 19)
 scale = Vector2(3, 3)
-texture = ExtResource("8_2lqri")
+texture = ExtResource("9_fa8du")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 light_mask = 1023
-position = Vector2(36, 16.5)
+position = Vector2(36, 19)
 shape = SubResource("RectangleShape2D_hsn4b")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -4405,7 +4440,7 @@ position = Vector2(30, 19)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(289, -402)
-script = ExtResource("29_h3xb4")
+script = ExtResource("30_37sr3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 visibility_layer = 2
@@ -4423,12 +4458,12 @@ vertical_alignment = 2
 
 [node name="police" type="CharacterBody2D" parent="."]
 position = Vector2(547, 471)
-script = ExtResource("30_2lqri")
+script = ExtResource("31_ijx7x")
 
 [node name="Sprite2D" type="Sprite2D" parent="police"]
 position = Vector2(-123, -50)
 scale = Vector2(3.5, 3.5)
-texture = ExtResource("30_1nkp2")
+texture = ExtResource("32_si72m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="police"]
 position = Vector2(-123.5, -49.5)
@@ -4438,12 +4473,12 @@ shape = SubResource("RectangleShape2D_gk6se")
 position = Vector2(-123, -47)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="police/Area2D"]
-position = Vector2(-7, 17)
+position = Vector2(-1.25, 39)
 shape = SubResource("RectangleShape2D_572ix")
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2(234, 697)
-script = ExtResource("31_gk6se")
+script = ExtResource("33_ajiu8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(95, 169)
@@ -4462,16 +4497,14 @@ vertical_alignment = 2
 [node name="DialogueUI" type="CanvasLayer" parent="."]
 
 [node name="Panel" type="Panel" parent="DialogueUI"]
-anchors_preset = 12
+visible = false
+anchors_preset = -1
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 134.0
-offset_top = 93.0
-offset_right = 134.0
-offset_bottom = 243.0
+offset_top = -360.0
+offset_bottom = -240.0
 grow_horizontal = 2
-grow_vertical = 0
 
 [node name="NpcName" type="Label" parent="DialogueUI/Panel"]
 layout_mode = 1
@@ -4510,5 +4543,7 @@ label_settings = SubResource("LabelSettings_vhlgy")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="police/Area2D" to="police" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="police/Area2D" to="police" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]

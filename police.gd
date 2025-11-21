@@ -1,51 +1,67 @@
 extends CharacterBody2D
 
-@export var npc_name = "경찰"
-
-# 회차별 대화 세트
-var dialogues = [
-	[
-		{"npc": "안녕. 처음 보는 얼굴이네."},
-		{"player": "네, 방금 왔어요."},
-		{"npc": "이 마을은 조심해야 해."}
-	],
-	[
-		{"npc": "또 왔구나."},
-		{"npc": "혹시 도움이 필요해?"}
-	]
-]
-
-var talk_count = 0
-var player_in_range = false
+var npc_file := "npc_police"
+	# JSON 파일 이름 (res://dialogues/npc_police.json)
+var talk_count := 0              # 몇 번째 대화를 하는지 저장
+var player_in_range := false     # 플레이어가 NPC 옆에 있는지 감지
 
 func _ready():
-	$Area2D.body_entered.connect(_on_enter)
-	$Area2D.body_exited.connect(_on_exit)
-	DialogueManager.dialogue_finished.connect(_on_dialogue_end)
+	# DialogueManager가 대화 끝났다고 하면 quest 완료 신호 받기
+	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
 
-func _on_enter(body):
+func _process(delta):
+	# 플레이어가 범위 안에 있고 R을 눌렀고, 현재 대화 중이 아닐 때
+	if player_in_range and Input.is_action_just_pressed("interact_r"):
+		_start_talk()
+
+# ---------------------------------------
+#  플레이어와 상호작용 트리거 (Collision or Area2D)
+# ---------------------------------------
+func _on_body_entered(body):
 	if body.name == "Player":
 		player_in_range = true
 
-func _on_exit(body):
+func _on_body_exited(body):
 	if body.name == "Player":
 		player_in_range = false
 
-func _input(event):
-	if player_in_range and !DialogueManager.talking:
-		if event.is_action_pressed("talk"): # R
-			_start_dialogue()
 
-	# Space 로 대사 넘기기
-	if DialogueManager.talking and event.is_action_pressed("ui_accept"):
-		DialogueManager.next()
-
-func _start_dialogue():
-	var set_id = min(talk_count, dialogues.size() - 1)
-	DialogueManager.start_dialogue(npc_name, dialogues[set_id])
+# ---------------------------------------
+#  대화 시작
+# ---------------------------------------
+func _start_talk():
 	talk_count += 1
 
-func _on_dialogue_end():
-	# 예: 첫 대화 끝나면 퀘스트 시작
+	var key := ""
 	if talk_count == 1:
-		QuestManager.start_quest("find_ring")
+		key = "first"
+	elif talk_count == 2:
+		key = "second"
+	else:
+		key = "repeat"   # JSON에서 repeat 항목 넣어두면 다음부터 반복 가능
+
+	# JSON 파일에서 대사 불러오기
+	var result = DialogueManager.load_dialogue(npc_file, key)
+
+	# result["name"] 은 JSON의 display_name
+	# result["lines"] 는 해당 대사 목록
+	DialogueManager.start_dialogue(result["name"], result["lines"])
+
+
+# ---------------------------------------
+#  대화가 끝났을 때 실행되는 함수 (퀘스트 완료 신호 처리)
+# ---------------------------------------
+func _on_dialogue_finished():
+	if talk_count == 1:
+		QuestManager.complete_quest("police_talk_1")
+	elif talk_count == 2:
+		QuestManager.complete_quest("police_talk_2")
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("Player"):
+		player_in_range = true
+
+func _on_area_2d_body_exited(body):
+	if body.is_in_group("Player"):
+		player_in_range = false

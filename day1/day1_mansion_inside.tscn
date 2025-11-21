@@ -1,45 +1,45 @@
 [gd_scene load_steps=45 format=4 uid="uid://dq62iuxjejasf"]
 
-[ext_resource type="Script" uid="uid://dgv2168flboc5" path="res://character_body_2d.gd" id="1_hssue"]
-[ext_resource type="Texture2D" uid="uid://hxp07267ufwq" path="res://Tiny_pixel_pack/Tiles/CityInterior/CityInterior_1_2.png" id="3_ayqnp"]
-[ext_resource type="Texture2D" uid="uid://crpg13uijdhen" path="res://Tiny_pixel_pack/Tiles/CityInterior/CityInterior_2_1.png" id="4_4s8p7"]
-[ext_resource type="Texture2D" uid="uid://drxxtr62t0rc7" path="res://Tiny_pixel_pack/Tiles/CityInterior/CityInterior_2_3.png" id="5_hsouo"]
-[ext_resource type="Texture2D" uid="uid://qti560jagia7" path="res://Tiny_pixel_pack/Tiles/CastleInterior/CastleInterior_7_1.png" id="6_kt8dq"]
-[ext_resource type="Texture2D" uid="uid://cof7ncpycxlw7" path="res://Tiny_pixel_pack/Tiles/CastleExterior/CastleExterior_2_2.png" id="7_v0oso"]
-[ext_resource type="Texture2D" uid="uid://b1vkm55b4ji1u" path="res://kenney_tiny-town/Tilemap/tilemap_packed.png" id="8_am7bp"]
-[ext_resource type="Texture2D" uid="uid://c5pqpkoes3fpb" path="res://kenney_tiny-town/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="9_tld6o"]
-[ext_resource type="Texture2D" uid="uid://co344kfgmc5j" path="res://main_up.png" id="10_2sju2"]
-[ext_resource type="Script" uid="uid://c4b1p6gtap5ko" path="res://area_2d_1.gd" id="10_35jaj"]
-[ext_resource type="Texture2D" uid="uid://8tdpn3aceli6" path="res://m_up_frame1.png" id="11_qokf1"]
-[ext_resource type="Texture2D" uid="uid://eyuf7s8vblf4" path="res://m_up_frame2.png" id="12_ctc7o"]
-[ext_resource type="Texture2D" uid="uid://duqqbcltoxh1o" path="res://pixil-frame-0.png" id="13_n0yae"]
-[ext_resource type="Texture2D" uid="uid://b7bm8gbcroe5s" path="res://m_down_frame1.png" id="14_yx8fb"]
-[ext_resource type="Texture2D" uid="uid://cg6jpubypcwoy" path="res://main_down_frame2.png" id="15_mtco3"]
-[ext_resource type="Texture2D" uid="uid://b3o613leauumq" path="res://main_left.png" id="16_obtwg"]
-[ext_resource type="Texture2D" uid="uid://b76aeuwpf2xfi" path="res://m_left_frame1.png" id="17_jp88h"]
-[ext_resource type="Texture2D" uid="uid://opmr44htty6l" path="res://m_left_frame2.png" id="18_xsoec"]
-[ext_resource type="Texture2D" uid="uid://bl7i4x13it457" path="res://main_right.png" id="19_atvjv"]
-[ext_resource type="Texture2D" uid="uid://caab2pjy85mpo" path="res://m_right_frame1.png" id="20_47273"]
-[ext_resource type="Texture2D" uid="uid://d25tutyrbmf1a" path="res://m_right_frame2.png" id="21_usx2b"]
-[ext_resource type="Texture2D" uid="uid://cs80eabgbme4w" path="res://m_upleft.png" id="22_3te2o"]
-[ext_resource type="Texture2D" uid="uid://g0hub4qh6kcp" path="res://m_upleft_frame1.png" id="23_3jxqh"]
-[ext_resource type="Texture2D" uid="uid://dp7felrffhcxg" path="res://m_upleft_frame2.png" id="24_01km1"]
-[ext_resource type="Texture2D" uid="uid://cmvm0v2d2lnjf" path="res://m_upright.png" id="25_ooa64"]
-[ext_resource type="Texture2D" uid="uid://wfa28lpmiirx" path="res://m_upright_frame1.png" id="26_1q7a7"]
-[ext_resource type="Texture2D" uid="uid://brhpgruaj8fne" path="res://m_upright_frame2.png" id="27_aasto"]
-[ext_resource type="Texture2D" uid="uid://3jc4mnpqt74n" path="res://main_leftdown.png" id="28_a6hao"]
-[ext_resource type="Texture2D" uid="uid://b684y4a8aq7xv" path="res://m_downleft_frame1.png" id="29_rh34n"]
-[ext_resource type="Texture2D" uid="uid://omxgvq45sech" path="res://m_downleft_frame2.png" id="30_gied5"]
-[ext_resource type="Texture2D" uid="uid://dn3n1h68s06o2" path="res://main_rightdown.png" id="31_13vw6"]
-[ext_resource type="Texture2D" uid="uid://d17sjgr41w2r2" path="res://m_downright_frame1.png" id="32_2wb7s"]
-[ext_resource type="Texture2D" uid="uid://dmlw3lniavgpu" path="res://m_down_right_frame2.png" id="33_dbegw"]
+[ext_resource type="Texture2D" uid="uid://hxp07267ufwq" path="res://Tiny_pixel_pack/Tiles/CityInterior/CityInterior_1_2.png" id="1_x3auc"]
+[ext_resource type="Texture2D" uid="uid://crpg13uijdhen" path="res://Tiny_pixel_pack/Tiles/CityInterior/CityInterior_2_1.png" id="2_lfqdg"]
+[ext_resource type="Texture2D" uid="uid://drxxtr62t0rc7" path="res://Tiny_pixel_pack/Tiles/CityInterior/CityInterior_2_3.png" id="3_lpegt"]
+[ext_resource type="Texture2D" uid="uid://qti560jagia7" path="res://Tiny_pixel_pack/Tiles/CastleInterior/CastleInterior_7_1.png" id="4_qfnpg"]
+[ext_resource type="Texture2D" uid="uid://cof7ncpycxlw7" path="res://Tiny_pixel_pack/Tiles/CastleExterior/CastleExterior_2_2.png" id="5_4o5w3"]
+[ext_resource type="Texture2D" uid="uid://b1vkm55b4ji1u" path="res://kenney_tiny-town/Tilemap/tilemap_packed.png" id="6_itjff"]
+[ext_resource type="Texture2D" uid="uid://c5pqpkoes3fpb" path="res://kenney_tiny-town/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="7_5x8md"]
+[ext_resource type="Script" uid="uid://c4b1p6gtap5ko" path="res://area_2d_1.gd" id="8_3b1mn"]
+[ext_resource type="Script" uid="uid://dgv2168flboc5" path="res://character_body_2d.gd" id="9_1cnqn"]
+[ext_resource type="Texture2D" uid="uid://co344kfgmc5j" path="res://main_up.png" id="10_y8aof"]
+[ext_resource type="Texture2D" uid="uid://8tdpn3aceli6" path="res://m_up_frame1.png" id="11_no3kd"]
+[ext_resource type="Texture2D" uid="uid://eyuf7s8vblf4" path="res://m_up_frame2.png" id="12_ajuha"]
+[ext_resource type="Texture2D" uid="uid://duqqbcltoxh1o" path="res://pixil-frame-0.png" id="13_3a438"]
+[ext_resource type="Texture2D" uid="uid://b7bm8gbcroe5s" path="res://m_down_frame1.png" id="14_ibadc"]
+[ext_resource type="Texture2D" uid="uid://cg6jpubypcwoy" path="res://main_down_frame2.png" id="15_d22y6"]
+[ext_resource type="Texture2D" uid="uid://b3o613leauumq" path="res://main_left.png" id="16_eks36"]
+[ext_resource type="Texture2D" uid="uid://b76aeuwpf2xfi" path="res://m_left_frame1.png" id="17_y5no1"]
+[ext_resource type="Texture2D" uid="uid://opmr44htty6l" path="res://m_left_frame2.png" id="18_crpuo"]
+[ext_resource type="Texture2D" uid="uid://bl7i4x13it457" path="res://main_right.png" id="19_lft4v"]
+[ext_resource type="Texture2D" uid="uid://caab2pjy85mpo" path="res://m_right_frame1.png" id="20_a8dm0"]
+[ext_resource type="Texture2D" uid="uid://d25tutyrbmf1a" path="res://m_right_frame2.png" id="21_d3at4"]
+[ext_resource type="Texture2D" uid="uid://cs80eabgbme4w" path="res://m_upleft.png" id="22_3yvcu"]
+[ext_resource type="Texture2D" uid="uid://g0hub4qh6kcp" path="res://m_upleft_frame1.png" id="23_nuwti"]
+[ext_resource type="Texture2D" uid="uid://dp7felrffhcxg" path="res://m_upleft_frame2.png" id="24_500vl"]
+[ext_resource type="Texture2D" uid="uid://cmvm0v2d2lnjf" path="res://m_upright.png" id="25_bg3k6"]
+[ext_resource type="Texture2D" uid="uid://wfa28lpmiirx" path="res://m_upright_frame1.png" id="26_0b36u"]
+[ext_resource type="Texture2D" uid="uid://brhpgruaj8fne" path="res://m_upright_frame2.png" id="27_kcumd"]
+[ext_resource type="Texture2D" uid="uid://3jc4mnpqt74n" path="res://main_leftdown.png" id="28_tfkd8"]
+[ext_resource type="Texture2D" uid="uid://b684y4a8aq7xv" path="res://m_downleft_frame1.png" id="29_1rp5a"]
+[ext_resource type="Texture2D" uid="uid://omxgvq45sech" path="res://m_downleft_frame2.png" id="30_ghl0a"]
+[ext_resource type="Texture2D" uid="uid://dn3n1h68s06o2" path="res://main_rightdown.png" id="31_wv8uo"]
+[ext_resource type="Texture2D" uid="uid://d17sjgr41w2r2" path="res://m_downright_frame1.png" id="32_8g7dm"]
+[ext_resource type="Texture2D" uid="uid://dmlw3lniavgpu" path="res://m_down_right_frame2.png" id="33_2imih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v52kk"]
-texture = ExtResource("3_ayqnp")
+texture = ExtResource("1_x3auc")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ae0l7"]
-texture = ExtResource("4_4s8p7")
+texture = ExtResource("2_lfqdg")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -51,7 +51,7 @@ texture = ExtResource("4_4s8p7")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y255l"]
-texture = ExtResource("5_hsouo")
+texture = ExtResource("3_lpegt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -63,7 +63,7 @@ texture = ExtResource("5_hsouo")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kh4xw"]
-texture = ExtResource("6_kt8dq")
+texture = ExtResource("4_qfnpg")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -74,11 +74,11 @@ texture = ExtResource("6_kt8dq")
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jevhu"]
-texture = ExtResource("7_v0oso")
+texture = ExtResource("5_4o5w3")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ntq5c"]
-texture = ExtResource("8_am7bp")
+texture = ExtResource("6_itjff")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -213,7 +213,7 @@ texture = ExtResource("8_am7bp")
 11:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7lko"]
-texture = ExtResource("9_tld6o")
+texture = ExtResource("7_5x8md")
 texture_region_size = Vector2i(17, 17)
 0:0/0 = 0
 1:0/0 = 0
@@ -2180,7 +2180,7 @@ tile_set = SubResource("TileSet_6f25e")
 
 [node name="Area2D1" type="Area2D" parent="."]
 position = Vector2(289, -402)
-script = ExtResource("10_35jaj")
+script = ExtResource("8_3b1mn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D1"]
 visibility_layer = 2
@@ -2197,20 +2197,20 @@ label_settings = SubResource("LabelSettings_4s8p7")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(261, 257)
-script = ExtResource("1_hssue")
-sprite_up_frames = Array[Texture]([ExtResource("10_2sju2"), ExtResource("11_qokf1"), ExtResource("12_ctc7o")])
-sprite_down_frames = Array[Texture]([ExtResource("13_n0yae"), ExtResource("14_yx8fb"), ExtResource("15_mtco3")])
-sprite_left_frames = Array[Texture]([ExtResource("16_obtwg"), ExtResource("17_jp88h"), ExtResource("18_xsoec")])
-sprite_right_frames = Array[Texture]([ExtResource("19_atvjv"), ExtResource("20_47273"), ExtResource("21_usx2b")])
-sprite_up_left_frames = Array[Texture]([ExtResource("22_3te2o"), ExtResource("23_3jxqh"), ExtResource("24_01km1")])
-sprite_up_right_frames = Array[Texture]([ExtResource("25_ooa64"), ExtResource("26_1q7a7"), ExtResource("27_aasto")])
-sprite_down_left_frames = Array[Texture]([ExtResource("28_a6hao"), ExtResource("29_rh34n"), ExtResource("30_gied5")])
-sprite_down_right_frames = Array[Texture]([ExtResource("31_13vw6"), ExtResource("32_2wb7s"), ExtResource("33_dbegw")])
+script = ExtResource("9_1cnqn")
+sprite_up_frames = Array[Texture]([ExtResource("10_y8aof"), ExtResource("11_no3kd"), ExtResource("12_ajuha")])
+sprite_down_frames = Array[Texture]([ExtResource("13_3a438"), ExtResource("14_ibadc"), ExtResource("15_d22y6")])
+sprite_left_frames = Array[Texture]([ExtResource("16_eks36"), ExtResource("17_y5no1"), ExtResource("18_crpuo")])
+sprite_right_frames = Array[Texture]([ExtResource("19_lft4v"), ExtResource("20_a8dm0"), ExtResource("21_d3at4")])
+sprite_up_left_frames = Array[Texture]([ExtResource("22_3yvcu"), ExtResource("23_nuwti"), ExtResource("24_500vl")])
+sprite_up_right_frames = Array[Texture]([ExtResource("25_bg3k6"), ExtResource("26_0b36u"), ExtResource("27_kcumd")])
+sprite_down_left_frames = Array[Texture]([ExtResource("28_tfkd8"), ExtResource("29_1rp5a"), ExtResource("30_ghl0a")])
+sprite_down_right_frames = Array[Texture]([ExtResource("31_wv8uo"), ExtResource("32_8g7dm"), ExtResource("33_2imih")])
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(36, 19)
 scale = Vector2(3, 3)
-texture = ExtResource("13_n0yae")
+texture = ExtResource("13_3a438")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 light_mask = 1023
