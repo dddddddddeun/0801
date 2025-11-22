@@ -52,8 +52,6 @@ func add_quest(id: String, name: String, desc: String = "") -> void:
 
 	emit_signal("quest_added", id)
 
-	if autosave:
-		save_quests()
 
 
 # ----------------------
@@ -66,30 +64,28 @@ func start_quest(id: String) -> void:
 	var q: Dictionary = quests[id]
 
 	if q["status"] == "not_started":
-		q["status"] = "in_progress"
+
 		quests[id] = q
 		emit_signal("quest_started", id)
 
-		if autosave:
-			save_quests()
 
 
 # ----------------------
 # 퀘스트 완료
 # ----------------------
 func complete_quest(id: String) -> void:
+	print("신호받음")
 	if not quests.has(id):
 		return
 
 	var q: Dictionary = quests[id]
 
 	if q["status"] != "completed":
+		print("completed으로 바뀜")
 		q["status"] = "completed"
 		quests[id] = q
 		emit_signal("quest_completed", id)
 
-		if autosave:
-			save_quests()
 
 
 # ----------------------
@@ -106,16 +102,6 @@ func get_all_quests() -> Dictionary:
 # ----------------------
 # 저장
 # ----------------------
-func save_quests(path: String = "") -> void:
-	var p: String = path if path != "" else save_path
-
-	var file := FileAccess.open(p, FileAccess.WRITE)
-	if file == null:
-		return
-
-	var data := {"quests": quests}
-	file.store_string(JSON.stringify(data))
-	file.close()
 
 
 # ----------------------

@@ -49,7 +49,9 @@ func _update_ui():
 				label.modulate = Color(1, 1, 1)
 
 			"completed":
+				
 				label.modulate = Color(0.6, 1, 0.6)
+				print("퀘스트 바뀜")
 
 		label.text = "%s: %s" % [q["name"], q["status"]]
 		quest_list.add_child(label)
