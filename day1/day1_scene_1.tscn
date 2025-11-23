@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://bwqfu8iuen6nn" path="res://policefront.png" id="32_si72m"]
 [ext_resource type="Script" uid="uid://b2vyau4hxigd2" path="res://area_2d_2_1.gd" id="33_ajiu8"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nd1y5"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_elocp"]
 texture = ExtResource("2_l6w8r")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -172,9 +172,9 @@ texture = ExtResource("2_l6w8r")
 
 [sub_resource type="TileSet" id="TileSet_aq1l8"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_nd1y5")
+sources/0 = SubResource("TileSetAtlasSource_elocp")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4nmru"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6w8r"]
 texture = ExtResource("3_yj1n4")
 texture_region_size = Vector2i(17, 17)
 0:0/0 = 0
@@ -2089,7 +2089,7 @@ texture_region_size = Vector2i(17, 17)
 58:31/0 = 0
 59:31/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_05u5g"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yj1n4"]
 texture = ExtResource("2_l6w8r")
 0:0/0 = 0
 1:0/0 = 0
@@ -2282,10 +2282,10 @@ texture = ExtResource("2_l6w8r")
 
 [sub_resource type="TileSet" id="TileSet_cr3cd"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_4nmru")
-sources/1 = SubResource("TileSetAtlasSource_05u5g")
+sources/0 = SubResource("TileSetAtlasSource_l6w8r")
+sources/1 = SubResource("TileSetAtlasSource_yj1n4")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mjd5i"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i3san"]
 texture = ExtResource("2_l6w8r")
 0:0/0 = 0
 1:0/0 = 0
@@ -2420,7 +2420,7 @@ texture = ExtResource("2_l6w8r")
 10:10/0 = 0
 11:10/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0rxu"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oos8c"]
 texture = ExtResource("4_i3san")
 texture_region_size = Vector2i(17, 17)
 0:0/0 = 0
@@ -4336,8 +4336,8 @@ texture_region_size = Vector2i(17, 17)
 59:31/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_2fno3"]
-sources/0 = SubResource("TileSetAtlasSource_mjd5i")
-sources/1 = SubResource("TileSetAtlasSource_t0rxu")
+sources/0 = SubResource("TileSetAtlasSource_i3san")
+sources/1 = SubResource("TileSetAtlasSource_oos8c")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hsn4b"]
 size = Vector2(40, 54)

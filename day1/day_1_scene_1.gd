@@ -6,6 +6,8 @@ func _ready():
 
 	$/root/QuestUI.visible = true
 	$/root/DayUI.visible = true
+	$/root/InventoryUI.visible = true
+
 	print("Day1 quests loading...")
 	print("Day1 scene loaded!")
 	for q in day1_quests.quests:

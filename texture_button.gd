@@ -4,4 +4,4 @@ func _ready():
 	pressed.connect(_on_button_pressed)
 
 func _on_button_pressed():
-	DayManager.change_day(1)
+	get_tree().change_scene_to_file("res://IntroScene.tscn")

@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://crftm0xt7p6ev"]
+
+[ext_resource type="Script" uid="uid://bhsd2h50vcrjj" path="res://intro_scene.gd" id="1_xmxck"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ey5ed"]
+
+[node name="IntroScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xmxck")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.027
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 54.36
+offset_right = -42.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_ey5ed")
+vertical_alignment = 1

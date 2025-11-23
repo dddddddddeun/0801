@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://qkk3c88se8et"]
+
+[ext_resource type="Texture2D" uid="uid://df64h2ujgwxvw" path="res://pixil-frame-0 (11).png" id="1_20xej"]
+[ext_resource type="Script" uid="uid://1e6bux75r2ml" path="res://scripts/ItemData.gd" id="1_abbot"]
+
+[resource]
+script = ExtResource("1_abbot")
+id = "knife"
+display_name = "단도"
+description = "와 단도"
+icon = ExtResource("1_20xej")
+metadata/_custom_type_script = "uid://1e6bux75r2ml"

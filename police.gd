@@ -50,6 +50,8 @@ func _start_talk():
 #  대화가 끝났을 때 실행되는 함수 (퀘스트 완료 신호 처리)
 # ---------------------------------------
 func _on_dialogue_finished():
+	var knife_item: ItemData = preload("res://items/knife_item.tres")
+	Inventory.add_item(knife_item)
 	if talk_count == 1:
 		QuestManager.complete_quest("police_talk")
 	DayManager.check_day_clear_condition()
