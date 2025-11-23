@@ -5,6 +5,7 @@ extends Node2D    # 또는 너의 최상위 노드 타입
 func _ready():
 
 	$/root/QuestUI.visible = true
+	$/root/DayUI.visible = true
 	print("Day1 quests loading...")
 	print("Day1 scene loaded!")
 	for q in day1_quests.quests:

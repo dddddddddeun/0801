@@ -52,8 +52,7 @@ func _start_talk():
 func _on_dialogue_finished():
 	if talk_count == 1:
 		QuestManager.complete_quest("police_talk")
-
-	print("[POLICE] dialogue finished received! talk_count =", talk_count)
+	DayManager.check_day_clear_condition()
 
 
 func _on_area_2d_body_entered(body):

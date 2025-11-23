@@ -6,23 +6,21 @@ signal quest_completed(id: String)
 signal quests_loaded()
 
 func load_day_quests(resource_path: String):
-	var res = load(resource_path)
-	if res == null:
+	var script = load(resource_path)
+	if script == null:
 		push_error("❌ day quests 파일 로드 실패: " + resource_path)
 		return
-	
-	if not res.has_method("get"):
+
+	var instance = script.new()
+
+	if not instance.has_variable("quests"):
 		push_error("❌ day quests 파일에 quests 변수가 없음")
 		return
 
-	var quest_array = res.quests
+	var quest_array = instance.quests
 
 	for q in quest_array:
-		var id = q["id"]
-		var name = q["name"]
-		var desc = q["desc"]
-
-		add_quest(id, name, desc)
+		QuestManager.add_quest(q["id"], q["name"], q["desc"])
 
 	print("📌 Day quests 로드 완료:", quest_array.size())
 
@@ -99,6 +97,11 @@ func get_all_quests() -> Dictionary:
 # ----------------------
 # 저장
 # ----------------------
+func all_quests_completed() -> bool:
+	for id in quests.keys():
+		if quests[id]["status"] != "completed":
+			return false
+	return true
 
 
 # ----------------------

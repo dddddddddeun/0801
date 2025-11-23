@@ -4363,6 +4363,7 @@ size = Vector2(190, 114)
 [sub_resource type="LabelSettings" id="LabelSettings_vhlgy"]
 
 [node name="day1_scene_1" type="Node2D"]
+position = Vector2(-254, -474)
 script = ExtResource("1_l6w8r")
 
 [node name="방지턱" type="TileMapLayer" parent="."]
