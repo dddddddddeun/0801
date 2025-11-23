@@ -28,13 +28,10 @@ func load_day_quests(resource_path: String):
 
 var quests: Dictionary = {}
 
-var autosave: bool = true
-var save_path: String = "user://quests.save"
 
 
 func _ready() -> void:
-	if FileAccess.file_exists(save_path):
-		load_quests()
+	load_quests()
 
 
 # ----------------------
@@ -108,7 +105,7 @@ func get_all_quests() -> Dictionary:
 # 로드
 # ----------------------
 func load_quests(path: String = "") -> void:
-	var p: String = path if path != "" else save_path
+	var p: String = path 
 
 	if not FileAccess.file_exists(p):
 		return

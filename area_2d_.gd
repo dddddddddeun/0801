@@ -3,8 +3,9 @@ extends Area2D
 @onready var label = $Label
 
 func _ready():
-	body_entered.connect(_on_body_entered)
-	body_exited.connect(_on_body_exited)
+	$Label.visible = false
+	connect("body_entered", _on_body_entered)
+	connect("body_exited", _on_body_exited)
 
 func _on_body_entered(body):
 	if body.name == "Player":

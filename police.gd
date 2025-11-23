@@ -35,8 +35,6 @@ func _start_talk():
 	var key := ""
 	if talk_count == 1:
 		key = "first"
-	elif talk_count == 2:
-		key = "second"
 	else:
 		key = "repeat"   # JSON에서 repeat 항목 넣어두면 다음부터 반복 가능
 
@@ -53,9 +51,8 @@ func _start_talk():
 # ---------------------------------------
 func _on_dialogue_finished():
 	if talk_count == 1:
-		QuestManager.complete_quest("police_talk_1")
-	elif talk_count == 2:
-		QuestManager.complete_quest("police_talk_2")
+		QuestManager.complete_quest("police_talk")
+
 	print("[POLICE] dialogue finished received! talk_count =", talk_count)
 
 

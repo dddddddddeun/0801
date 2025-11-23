@@ -28,7 +28,6 @@ func change_day(new_day: int) -> void:
 	_load_day_scene(current_day)
 
 	# 모든 퀘스트 초기화 후 다시 등록
-	_reset_day_quests()
 
 	emit_signal("day_changed", current_day)
 	print("Day changed →", current_day)
@@ -48,7 +47,6 @@ func next_day() -> void:
 	_load_day_scene(current_day)
 
 	# 퀘스트 초기화 + 재등록
-	_reset_day_quests()
 
 	emit_signal("day_changed", current_day)
 	print("Next Day →", current_day)
@@ -70,71 +68,3 @@ func _load_day_scene(day: int) -> void:
 		return
 
 	get_tree().change_scene_to_packed(scene)
-
-
-# ======================================================
-# Day별 퀘스트 초기화 + 재등록
-# ======================================================
-func _reset_day_quests():
-	# 모든 기존 퀘스트 제거
-	QuestManager.quests.clear()
-
-	# Day별 신규 퀘스트 등록
-	match current_day:
-		1:
-			_register_day1_quests()
-
-		2:
-			_register_day2_quests()
-
-		3:
-			_register_day3_quests()
-
-	print("Day", current_day, "퀘스트 초기화 완료")
-
-
-# ======================================================
-# Day 1 퀘스트 등록
-# ======================================================
-func _register_day1_quests():
-	QuestManager.add_quest(
-		"police_talk_1",
-		"경찰과 첫 대화하기",
-		"마을 경찰에게 최초로 말을 걸어보자"
-	)
-
-	QuestManager.add_quest(
-		"police_talk_2",
-		"경찰과 두 번째 대화하기",
-		"경찰에게 다시 말을 건다."
-	)
-
-
-# ======================================================
-# Day 2 퀘스트 등록
-# ======================================================
-func _register_day2_quests():
-	QuestManager.add_quest(
-		"shopkeeper_talk_1",
-		"상점 주인에게 말걸기",
-		"상점 주인에게 첫 말을 걸기"
-	)
-
-
-# ======================================================
-# Day 3 퀘스트 등록
-# ======================================================
-func _register_day3_quests():
-	QuestManager.add_quest(
-		"mayor_talk_1",
-		"마을장과 대화하기",
-		"마을 장로에게 중요한 정보를 듣기"
-	)
-
-
-# ======================================================
-# 모든 퀘스트 완료되면 next day 버튼 허용
-# ======================================================
-func check_next_day_condition():
-	if QuestManager.all_quests_completed():
-		emit_signal("next_day_unlocked")

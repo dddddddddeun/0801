@@ -1,22 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://hrxgqwhltvvh"]
+[gd_scene load_steps=3 format=3 uid="uid://dvdkogefubpa"]
 
 [ext_resource type="Script" uid="uid://cjjanse4lglk7" path="res://quest_ui.gd" id="1_vh80s"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_582tu"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_elocp"]
+bg_color = Color(0.686275, 0.835294, 0.960784, 1)
+border_width_left = 13
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="QuestUI" type="CanvasLayer"]
 script = ExtResource("1_vh80s")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="Panel" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(250, 50)
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -250.0
+offset_left = -270.0
 offset_top = 20.0
 offset_right = -20.0
-offset_bottom = 20.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_582tu")
+offset_bottom = 70.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_elocp")
 
-[node name="quest_list" type="VBoxContainer" parent="PanelContainer"]
+[node name="QuestList" type="VBoxContainer" parent="Panel"]
 layout_mode = 2
