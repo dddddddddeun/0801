@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 var quest_list: VBoxContainer = null
+var new_font: FontFile = load("res://ThinDungGeunMo.ttf")
 
 func _ready():
 	# 신호 연결(미리) — 퀘스트 변경시 UI 갱신
@@ -71,10 +72,12 @@ func _update_ui():
 			"not_started":
 				label.text = "  🔒 " + q["name"] 
 				label.add_theme_color_override("font_color", Color(0.176, 0.176, 0.176))
+				label.add_theme_font_override("font", new_font)
 
 			"completed":
 				label.text = "  ✅ " + q["name"] 
 				label.add_theme_color_override("font_color", Color(0.1, 0.6, 0.1))
+				label.add_theme_font_override("font", new_font)
 				print("[QuestUI] 퀘스트 완료 표시됨:", id)
 
 		quest_list.add_child(label)

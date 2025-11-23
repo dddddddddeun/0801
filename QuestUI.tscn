@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://cjjanse4lglk7" path="res://quest_ui.gd" id="1_vh80s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_elocp"]
-bg_color = Color(0.686275, 0.835294, 0.960784, 1)
+bg_color = Color(0.832702, 0.911748, 0.979521, 1)
 border_width_left = 13
+border_color = Color(0.738303, 0.688502, 0.712184, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5

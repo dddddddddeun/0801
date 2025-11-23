@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var npc_file := "npc_police"
+var npc_file := "경찰 레누아"
 	# JSON 파일 이름 (res://dialogues/npc_police.json)
 var talk_count := 0              # 몇 번째 대화를 하는지 저장
 var player_in_range := false     # 플레이어가 NPC 옆에 있는지 감지

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var npc_file := "정원사 메클렌"
+var npc_file := "하녀 예레마이야"
 	# JSON 파일 이름 (res://dialogues/npc_police.json)
 var talk_count := 0              # 몇 번째 대화를 하는지 저장
 var player_in_range := false     # 플레이어가 NPC 옆에 있는지 감지
@@ -52,7 +52,7 @@ func _start_talk():
 func _on_dialogue_finished():
 
 	if talk_count == 1:
-		QuestManager.complete_quest("garden_talk")
+		QuestManager.complete_quest("maid_talk")
 	DayManager.check_day_clear_condition()
 
 

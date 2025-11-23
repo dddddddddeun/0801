@@ -7,6 +7,6 @@
 script = ExtResource("1_abbot")
 id = "knife"
 display_name = "단도"
-description = "와 단도"
+description = "살해도구로 추정되는 단도이다. "
 icon = ExtResource("1_20xej")
 metadata/_custom_type_script = "uid://1e6bux75r2ml"

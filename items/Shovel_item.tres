@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bek2ut101eqbx"]
+
+[ext_resource type="Script" uid="uid://1e6bux75r2ml" path="res://scripts/ItemData.gd" id="1_5kwu6"]
+[ext_resource type="Texture2D" uid="uid://cexdra0roi073" path="res://unnamed.dd.png" id="1_c4mdq"]
+
+[resource]
+script = ExtResource("1_5kwu6")
+id = "shovel"
+display_name = "삽"
+description = "정원사의 삽이다. 정원에서 발견되었다."
+icon = ExtResource("1_c4mdq")
+metadata/_custom_type_script = "uid://1e6bux75r2ml"

@@ -1,18 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://4a4jmf4ekek5"]
+[gd_scene load_steps=8 format=3 uid="uid://4a4jmf4ekek5"]
 
 [ext_resource type="Texture2D" uid="uid://cxmh6wx1itgp0" path="res://MenusIcons_34x34.png" id="1_bbn2s"]
 [ext_resource type="Script" uid="uid://c6qmtviaubtej" path="res://inventory_ui.gd" id="1_xlonu"]
+[ext_resource type="FontFile" uid="uid://cvy5nqiuoxk11" path="res://ThinDungGeunMo.ttf" id="3_cgsp4"]
 [ext_resource type="Texture2D" uid="uid://1nmy5anlw73u" path="res://QuitIcon.png" id="3_ictmd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlaer"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ohugl"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_ictmd"]
+
 [node name="InventoryUI" type="CanvasLayer"]
 script = ExtResource("1_xlonu")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
+anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -55,6 +59,7 @@ layout_mode = 2
 
 [node name="Inventory" type="Label" parent="Control/PanelContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_cgsp4")
 text = "Inventory"
 label_settings = SubResource("LabelSettings_ohugl")
 
@@ -62,21 +67,46 @@ label_settings = SubResource("LabelSettings_ohugl")
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_cgsp4")
+allow_reselect = true
 
 [node name="DetailPanel" type="PanelContainer" parent="Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/DetailPanel"]
+[node name="Control" type="Control" parent="Control/DetailPanel"]
 layout_mode = 2
 
-[node name="ItemImage" type="TextureRect" parent="Control/DetailPanel/VBoxContainer"]
+[node name="ItemImage" type="TextureRect" parent="Control/DetailPanel/Control"]
 layout_mode = 2
+offset_left = 93.0
+offset_top = 35.0
+offset_right = 555.0
+offset_bottom = 252.0
+size_flags_vertical = 3
 
-[node name="ItemLabel" type="Label" parent="Control/DetailPanel/VBoxContainer"]
+[node name="ItemLabel" type="Label" parent="Control/DetailPanel/Control"]
 layout_mode = 2
+offset_left = 70.0
+offset_top = 262.0
+offset_right = 574.0
+offset_bottom = 350.0
+theme_override_fonts/font = ExtResource("3_cgsp4")
+label_settings = SubResource("LabelSettings_ictmd")
 
-[node name="Close" type="TextureButton" parent="Control/DetailPanel"]
+[node name="Close" type="TextureButton" parent="Control/DetailPanel/Control"]
 layout_mode = 2
+offset_left = 589.0
+offset_top = 310.0
+offset_right = 610.0
+offset_bottom = 331.0
+scale = Vector2(2, 2)
 texture_normal = ExtResource("3_ictmd")
+
+[connection signal="item_selected" from="Control/PanelContainer/VBoxContainer/ItemList" to="." method="_on_item_selected"]
+[connection signal="pressed" from="Control/DetailPanel/Control/Close" to="." method="_on_close_button_pressed"]
