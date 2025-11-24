@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=4 uid="uid://clahkbukvxntc"]
+[gd_scene load_steps=144 format=4 uid="uid://clahkbukvxntc"]
 
 [ext_resource type="Texture2D" uid="uid://bts7srho03xph" path="res://kenney_tiny-town/kenney_roguelike-rpg-pack/Spritesheet/roguelikeSheet_transparent.png" id="1_mi8hg"]
 [ext_resource type="Texture2D" uid="uid://bc8qkvje32r4j" path="res://kenney_tiny-town/Tilemap/tilemap_packed.png" id="2_57kvh"]
@@ -37,6 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://bmknq77kd4v7r" path="res://Tiny_pixel_pack/Tiles/CityExterior/CityExterior_12_1.png" id="35_b5p08"]
 [ext_resource type="Texture2D" uid="uid://qol5opgdyt3x" path="res://Tiny_pixel_pack/Tiles/OutsideFeatures/OutsideFeatures_15_16_1.png" id="36_0yjmv"]
 [ext_resource type="Script" uid="uid://bmhp6p1pcvepm" path="res://area_2d.gd" id="37_ubtbg"]
+[ext_resource type="Texture2D" uid="uid://naceeqq16ais" path="res://unnamed (1).png" id="38_kq7us"]
 [ext_resource type="Script" uid="uid://dgv2168flboc5" path="res://character_body_2d.gd" id="38_w5m5h"]
 [ext_resource type="Texture2D" uid="uid://bnmwiubtwtjyl" path="res://main_up.png" id="39_2bvwg"]
 [ext_resource type="Texture2D" uid="uid://dr4eb63kkq5m5" path="res://m_up_frame1.png" id="40_c6kp3"]
@@ -17666,6 +17667,12 @@ text = "E : Enter"
 label_settings = SubResource("LabelSettings_bd22d")
 vertical_alignment = 2
 
+[node name="Unnamed(1)" type="Sprite2D" parent="."]
+position = Vector2(-1396, -141)
+rotation = -1.30376
+scale = Vector2(2.24405, 2.54242)
+texture = ExtResource("38_kq7us")
+
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(261, 257)
 script = ExtResource("38_w5m5h")
@@ -17737,14 +17744,14 @@ script = ExtResource("63_l83aq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 visibility_layer = 2
-position = Vector2(-1772, -317)
+position = Vector2(-1787, -283)
 shape = SubResource("RectangleShape2D_jje44")
 
 [node name="Label" type="Label" parent="Area2D4"]
-offset_left = -1868.0
-offset_top = -425.0
-offset_right = -1669.0
-offset_bottom = -195.0
+offset_left = -1885.0
+offset_top = -401.0
+offset_right = -1686.0
+offset_bottom = -171.0
 text = "Corpse was found here. 
 What happened?"
 label_settings = SubResource("LabelSettings_bd22d")

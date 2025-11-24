@@ -26,6 +26,8 @@ var is_typing: bool = false         # 타이핑 중인지 여부
 func _ready() -> void:
 	set_process(true)  # _process(delta) 켜기
 	_start_line()      # 첫 번째 줄 시작
+	var new_font: FontFile = load("res://ThinDungGeunMo.ttf")
+	label.add_theme_font_override("font", new_font)
 
 func _process(delta: float) -> void:
 	if not is_typing:
