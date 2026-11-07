@@ -59,8 +59,9 @@ func start_quest(id: String) -> void:
 	var q: Dictionary = quests[id]
 
 	if q["status"] == "not_started":
-
+		q["status"] = "in_progress"
 		quests[id] = q
+		print(q["status"])
 		emit_signal("quest_started", id)
 
 
@@ -69,7 +70,7 @@ func start_quest(id: String) -> void:
 # 퀘스트 완료
 # ----------------------
 func complete_quest(id: String) -> void:
-	print("신호받음")
+	print("완료 함수 호출됨: ", id)
 	if not quests.has(id):
 		return
 

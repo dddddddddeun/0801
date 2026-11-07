@@ -23,7 +23,6 @@ var _last_direction: Vector2 = Vector2.DOWN
 func _ready():
 	add_to_group("Player")
 
-
 func _physics_process(delta):
 
 	# ----------------------------------------------------
