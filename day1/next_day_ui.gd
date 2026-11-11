@@ -5,7 +5,7 @@ extends CanvasLayer
 
 
 func _ready() -> void:
-	layer = 100
+	layer = 18
 	next_button.hide()
 	next_panel.hide()
 

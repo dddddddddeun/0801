@@ -58,6 +58,7 @@ func _on_item_selected(index: int) -> void:
 	_show_item_detail(item)
 
 func _show_item_detail(item: ItemData) -> void:
+	layer =100
 	if item.detail_image:
 		detail_image.texture = item.detail_image
 	else:
@@ -69,4 +70,5 @@ func _show_item_detail(item: ItemData) -> void:
 	print("[InventoryUI] detail_panel.visible =", detail_panel.visible)
 
 func _on_close_button_pressed() -> void:
+	layer = 1
 	detail_panel.visible = false

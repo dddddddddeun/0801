@@ -74,6 +74,7 @@ allow_reselect = true
 
 [node name="DetailPanel" type="PanelContainer" parent="Control"]
 visible = false
+visibility_layer = 524289
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -82,6 +83,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Control" type="Control" parent="Control/DetailPanel"]
+visibility_layer = 1048575
 layout_mode = 2
 
 [node name="ItemImage" type="TextureRect" parent="Control/DetailPanel/Control"]
